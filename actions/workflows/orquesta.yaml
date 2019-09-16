@@ -16,4 +16,4 @@ tasks:
           - stderr: <% result().stderr %>
 
 output:
-  - stdout: <% ctx(stdout
+  - stdout: <% ctx(stdout) %>
