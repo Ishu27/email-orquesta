@@ -1,0 +1,9 @@
+---
+imap_accounts:
+  - name: me   
+    folder: "INBOX"
+    password: "super_S3c4e3t!"
+    port: 993
+    secure: true
+    server: "imap.example.com"
+    username: "me@example.com"
