@@ -9,7 +9,7 @@ input:
 
 tasks:
   task1:
-    action: email123.create_vm
+    action: email123.vm_create
     next:
       - when: <% succeeded() %>
         publish:
