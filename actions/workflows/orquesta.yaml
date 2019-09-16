@@ -12,11 +12,11 @@ tasks:
     action: email123.create_vm
     next:
       - when: <% succeeded() %>
-          publish:
-            - stdout: <% result().stdout %>
-            - stderr: <% result().stderr %>
+        publish:
+          - stdout: <% result().stdout %>
+          - stderr: <% result().stderr %>
       - when: <% failed() %>
-          publish: <% result() %>
+        publish: <% result() %>
 
 output:
   - stdout: <% ctx(stdout) %>
