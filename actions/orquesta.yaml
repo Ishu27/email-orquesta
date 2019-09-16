@@ -1,6 +1,6 @@
 ---
-name: orquesta-basic
-pack: examples
+name: orquesta
+pack: email123
 description: Run a local linux command
 runner_type: orquesta
 entry_point: workflows/orquesta-basic.yaml
