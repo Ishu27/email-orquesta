@@ -9,4 +9,17 @@ parameters:
     cmd:
       required: true
       type: string
-    
+    Subcription_id:
+      type: content
+    Group_Name:
+      type: content
+    Location:
+      type: content
+    VM_Name:
+      type: content
+    Client_Id:
+      type: content
+    Secret:
+      type: content
+    Tenant_Id:
+      type: content
