@@ -10,13 +10,13 @@ input:
 tasks:
   task1:
     action: email123.create_vm
-      next:
-        - when: <% succeeded() %>
-        publish:
-          - stdout: <% result().stdout %>
-          - stderr: <% result().stderr %>
-        - when: <% failed() %>
-            publish: <% result() %>
+    next:
+      - when: <% succeeded() %>
+          publish:
+            - stdout: <% result().stdout %>
+            - stderr: <% result().stderr %>
+      - when: <% failed() %>
+          publish: <% result() %>
 
 output:
   - stdout: <% ctx(stdout) %>
