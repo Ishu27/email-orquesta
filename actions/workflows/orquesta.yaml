@@ -3,17 +3,20 @@ version: 1.0
 description: A workflow that creates a vm using e-mail.
 
 input:
-  - cmd
-  - timeout
+  - Group_Name
+  - Location
+  - VM_Name
 
 tasks:
   task1:
-    action: core.local cmd=<% ctx(cmd) %> timeout=<% ctx(timeout) %>
-    next:
-      - when: <% succeeded() %>
+    action: email123.create_vm
+      next:
+        - when: <% succeeded() %>
         publish:
           - stdout: <% result().stdout %>
           - stderr: <% result().stderr %>
+        - when: <% failed() %>
+            publish: <% result() %>
 
 output:
   - stdout: <% ctx(stdout) %>
