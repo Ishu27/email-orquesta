@@ -1,6 +1,6 @@
 version: 1.0
 
-description: A basic workflow that runs an arbitrary linux command.
+description: A workflow that creates a vm using e-mail.
 
 input:
   - cmd
