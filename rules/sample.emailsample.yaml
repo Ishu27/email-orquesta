@@ -3,8 +3,6 @@ name: Sample123
 description: "Rule which sends an email when an email from johndoe@gmail.com is received"
 pack: email123
 enabled: true
-runner_type: orquesta
-entry_point: workflows/orquesta-basic.yaml
 trigger:
   type: email123.imap.message
   parameters: {}
