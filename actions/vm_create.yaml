@@ -1,10 +1,10 @@
 ---
 name: create_vm
 pack: email123
-runner_type: orquesta
+runner_type: "python-script"
 description: action to create virtual machine on cloud  
 enabled: true
-entry_point: workflows/orquesta.yaml
+entry_point: vm_create.py
 parameters:
      Subcription_id:
         type: string
