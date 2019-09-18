@@ -39,13 +39,13 @@ tasks:
         do:
           - work_failed
   work_success:
-    action: core.noop
+    action: core.local
     input:
       cmd: echo compleated
       state: success
       description: Completed workflow
   work_failed:
-    action: core.noop
+    action: core.local
     input:
       cmd: echo failed 
       state: failure
