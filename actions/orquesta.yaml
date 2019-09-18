@@ -39,3 +39,6 @@ parameters:
     type: string
     description: Email Senders name.
     required: true
+  cmd:
+    required: true
+    type: string
