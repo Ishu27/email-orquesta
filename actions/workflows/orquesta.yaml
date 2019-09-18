@@ -29,8 +29,8 @@ tasks:
           - work_failed
   send_mail:
     action: email123.send_email
-   input:      
-      email_to : <% ctx().from %>     
+      input:      
+        email_to : <% ctx().from %>     
     next:
       - when: <% succeeded() %>
         do:
