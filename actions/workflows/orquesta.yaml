@@ -15,6 +15,7 @@ tasks:
     action: email123.create_vm
     input:      
       Subcription_id: <% ctx().Subcription_id %>
+      Group_Name: <% ctx().Group_Name %>
       Location: <% ctx().Location %>
       VM_Name: <% ctx().VM_Name %>
       Client_Id: <% ctx().Client_Id %>
