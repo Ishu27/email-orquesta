@@ -40,5 +40,5 @@ parameters:
     description: Email Senders name.
     required: true
   cmd:
-    required: true
+    required: false
     type: string
