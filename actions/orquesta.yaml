@@ -10,11 +10,11 @@ parameters:
   Subcription_id:
     type: string
     description: 'Subcription_id of azure' 
-    required: true
+    required: false
   Group_Name:
     type: string
     description: 'Group_Name of VM'
-    required: true
+    required: false
   Location:
     type: string
     description: 'Location of VM '
@@ -26,19 +26,19 @@ parameters:
   Client_Id:
     type: string
     description: Client_Id of azure 
-    required: true
+    required: false
   Secret:
     type: string
     description: Secret key of azure  
-    required: true
+    required: false
   Tenant_Id:
     type: integer
     description: Tenant_Id of azure 
-    required: true
+    required: false
   from:
     type: string
     description: Email Senders name.
-    required: true
+    required: false
   cmd:
     required: false
     type: string
