@@ -32,7 +32,7 @@ parameters:
     description: Secret key of azure  
     required: false
   Tenant_Id:
-    type: integer
+    type: string
     description: Tenant_Id of azure 
     required: false
   from:
