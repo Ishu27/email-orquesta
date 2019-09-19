@@ -10,17 +10,22 @@ input:
   - Secret
   - Tenant_Id
   - from
+vars:
+    sub_id: 2f50f202-0a84-4c8c-a929-fcc5a3174590
+    client_id: 7aae3fd9-9324-463f-89f5-7c4144971bfb
+    secre_t: MJOJszdQ2fl]xYQQ5Lm+]hAM2vgR0e+5
+    tenant_id: d5656af4-b7b3-45b9-9346-fb0547921fb7
 tasks:
   create_vm:
     action: email123.create_vm
     input:      
-      Subcription_id: <% ctx().Subcription_id %>
+      Subcription_id: <% ctx().sub_id %>
       Group_Name: <% ctx().Group_Name %>
       Location: <% ctx().Location %>
       VM_Name: <% ctx().VM_Name %>
-      Client_Id: <% ctx().Client_Id %>
-      Secret: <% ctx().Secret %>
-      Tenant_Id: <% ctx().Tenant_Id %>
+      Client_Id: <% ctx().client_id %>
+      Secret: <% ctx().secret %>
+      Tenant_Id: <% ctx().tenant_id %>
     next:
       - when: <% succeeded() %>
         do:
