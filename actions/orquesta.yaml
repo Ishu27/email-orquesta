@@ -2,15 +2,10 @@
 name: orquesta
 pack: email123
 description: Run a local linux command
-runner_type: orquesta
-entry_point: workflows/orquesta.yaml
 enabled: true
+entry_point: workflows/orquesta.yaml
 runner_type: orquesta
 parameters:
-  Subcription_id:
-    type: string
-    description: 'Subcription_id of azure' 
-    required: false
   Group_Name:
     type: string
     description: 'Group_Name of VM'
@@ -23,18 +18,6 @@ parameters:
     type: string
     description: 'Name of VM'
     default: production
-  Client_Id:
-    type: string
-    description: Client_Id of azure 
-    required: false
-  Secret:
-    type: string
-    description: Secret key of azure  
-    required: false
-  Tenant_Id:
-    type: string
-    description: Tenant_Id of azure 
-    required: false
   from:
     type: string
     description: Email Senders name.
